@@ -1,0 +1,20 @@
+h1{color: #d069a3;}
+h2{font-family: "AppleGothic", Sans-serif;}
+P{  
+    font-family: "천안꿈누리터 모두체";
+    line-height: 2;
+}
+span{
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+}
+a{
+    font-size: 20pt;
+    text-decoration: none;
+    color: #000;
+}
+@font-face{
+    font-family: "천안꿈누리터 모두체", "cachildren-modu";
+    src: url(cachildren-modu.otf);
+}

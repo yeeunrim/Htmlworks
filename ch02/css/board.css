@@ -1,0 +1,13 @@
+/* board.html의 스타일 */
+table{
+    width: 600px;
+    height: 100px;
+    border: 2px solid pink;
+    border-collapse: collapse;
+    text-align: center;
+}
+/* 그룹 선택자(,)를 사용해서 중복을 줄인다. */
+th, td{
+    border: 2px dotted pink;
+    height: 30px;
+}

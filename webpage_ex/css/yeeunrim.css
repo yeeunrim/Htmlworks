@@ -1,0 +1,60 @@
+/* yeeunrim.html의 스타일 */
+body{
+    margin: 0;
+    background-color: black;
+}
+.font-effect-neon{
+    font-family: "Sofia", sans-serif;
+    font-size: 20pt;
+    text-align: right;
+    font-style: bold;
+    margin-right: 25px;
+    text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 
+        0 0 0.4em black, 0 0 0.6em gray, 0 0 0.8em gray, 0 0 1.0em gray, 0 0 1.2em gray;
+}
+ul li{
+    text-align: right;
+    margin-right: 25px;
+}
+ul li a{
+    color: white;
+    font-family: 'Athiti';
+    text-decoration: none;
+    font-size: 13pt;
+    letter-spacing: 1px;
+}
+ul li a:hover{
+    text-decoration-line: line-through;
+}
+.img1{
+    display: block;
+    margin-top: -113px;
+    margin-left: 70px;
+    opacity: 0.9;
+    position: absolute;
+    z-index: -1;
+}
+.img2{
+    display: block;
+    margin-bottom: 200px;
+    margin-left: 870px;
+    margin-top: 100px;
+    opacity: 0.9;
+}
+.div1{
+    margin: 20px;
+}
+#copyright{
+    font-family: 'Athiti';
+    font-size: 13pt;
+    text-align: right;
+    color: white;
+    float: right;
+}
+#thank{
+    font-family: 'Athiti';
+    font-size: 13pt;
+    text-align: left;
+    color: white;
+    float: left;
+} 

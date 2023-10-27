@@ -1,0 +1,18 @@
+/* text-align2.html의 스타일 */
+h1{color: blue;}
+.p1{
+    line-height: 1.5;
+    text-align: left;
+}
+.p2{
+    line-height: 1.5;
+    text-align: justify;
+    color: green;
+    font-family: lucida grande, 나눔고딕, NanumGothic !important; line-height: 1.4em;
+}
+.anto{
+    color: #f00;
+    font-weight: bold;
+    font-style: italic;
+    font-family: lucida grande, 나눔고딕, NanumGothic !important; line-height: 1.4em;
+}

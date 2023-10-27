@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> 수직 정렬 </title>
+        <style> 
+            table{
+                border: 2px solid gray;
+                border-collapse: collapse;
+            }
+            td{
+                border: 2px dotted gray;
+                width: 150px;
+                height: 100px;
+                text-align: center;
+            }
+            .td1{vertical-align: bottom;} /* 아래쪽 정렬 */
+            .td2{vertical-align: middle;} /* 중간 정렬 */
+            .td3{vertical-align: top;} /* 위쪽 정렬 */
+            /* 선택자(셀렉터) id는 유일한 것을 선택할 때 사용, #을 붙이고 사용 */
+            #cap_top{
+                caption-side: top; /* 표 설명 - 위쪽 위치 */
+                margin-bottom: 10px;} /* 바깥 여백 (아래쪽) */
+            #cap_bottom{
+                caption-side: bottom; /* 표 설명 - 아래쪽 위치 */
+                margin-top: 10px;} /* 바깥 여백 (위쪽) */
+        </style>
+    </head>
+    <body>
+        <!-- 캡션<caption>태그 : 표의 설명 -->
+        <table>
+            <caption id="cap_top"> 수직 정렬 (vertical-align) </caption>
+            <tr>
+                <td class="td1"> alignment </td>
+                <td class="td2"> alignment </td>
+                <td class="td3"> alignment </td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <caption id="cap_bottom"> 수직 정렬 (vertical-align) </caption>
+            <tr>
+                <td class="td1"> alignment </td>
+                <td class="td2"> alignment </td>
+                <td class="td3"> alignment </td>
+            </tr>
+        </table>
+    </body>
+</html>

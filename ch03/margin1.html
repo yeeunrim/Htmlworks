@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> margin1 </title>
+    <style>
+        /* 마진중첩 - 수직으로 되어 있는 경우, 위와 아래의 마진이 더 큰 수쪽으로 합쳐진다. */
+        /* 공통 */
+        div{
+            width: 200px;
+            height: 100px;
+        }
+        #box1{
+            background-color: red;
+            margin: 20px;
+        }
+        #box2{
+            background-color: green;
+            /* 숫자가 큰 쪽으로 중첩이 되어 50px이 아닌 30px로 된다. */
+            margin: 30px 20px;
+        }
+        #box3{
+            background-color: blue;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 수직 정렬 -->
+    <!-- 블럭 요소 : <div>, <p> -->
+    <!-- 블럭 요소를 수평 정렬하고 싶을 시에는 <display> 속성 사용 -->
+    <!-- <div id="box1"> </div>
+    <div id="box2"> </div>
+    <div id="box3"> </div> -->
+
+     <!-- 수평 정렬 -->
+     <!-- 인라인 요소 : <span>, <img> -->
+    <img src="images/bg4.jpg" alt="하트">
+    <img src="images/bg2.png" alt="날으는 아이">
+    <img src="images/bg3.png" alt="풍선">
+</body>
+</html>
