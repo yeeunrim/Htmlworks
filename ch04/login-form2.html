@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 로그인 폼 만들기 t</title>
+    <style>
+        body{
+            font-family: Lucida Grande, 나눔고딕, NaumGothic !important; line-height: 1.4em;
+        }
+        h2{
+            margin-left: 55px;
+        }
+        form{
+            width: 300px;
+            margin-left: 50px;
+            border: 1px solid gray;
+        }
+        ul li{
+            list-style: none;
+            margin: 16px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2> 로그인 </h2>
+    <form action="login.jsp" method="host">
+        <ul>
+            <li>
+                <label> 아이디 </label>
+                <input type="text" name="userid">
+            </li>
+            <!-- label 태그는 텍스트를 출력함 -->
+            <li>   
+                <label> 비밀번호 </label>
+                <input type="password" name="usepassword">
+            </li>   
+            <li>
+                <button type="submit"> 로그인 </button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

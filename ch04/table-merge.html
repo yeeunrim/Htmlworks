@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 - 셀병합</title>
+    <style>
+        table{
+            border: 1px solid gray;
+        }
+        td{
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 행(row) 병합 - 'rowspan'속성 -->
+    <table>
+        <tr>
+            <td rowspan="2">행 병합</td>
+            <td>1행2열</td>
+            <td>1행3열</td>
+        </tr>
+        <tr>
+            <td>2행2열</td>
+            <td>2행3열</td>
+        </tr>
+    </table>
+    <hr>
+    <!-- 열(col) 병합 - 'colspan'속성 -->
+    <table>
+        <tr>
+            <td>1행1열</td>
+            <td>1행2열</td>
+            <td>1행3열</td>
+        </tr>
+        <tr>
+            <td colspan="3">열 병합</td>
+        </tr>
+    </table>
+</body>
+</html>

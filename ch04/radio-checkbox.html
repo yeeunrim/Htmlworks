@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레디오, 체크박스 버튼 만들기</title>
+    <style>
+        form{
+            width: 500px;
+        }
+        fieldset{
+            margin-bottom: 16px;
+        }
+        legend{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <!-- 'label' 태그로 감싸주면 글씨를 선택해도 적용 가능 -->
+        <!-- 'fieldset' 태그는 폼의 요소를 하나의 영역으로 묶어서 외곽선을 그려줌 -->
+        <!-- 'legend' 태그는 묶은 그룹에 제목을 붙여준다. -->
+        
+        <fieldset>
+            <legend>신청 과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요 (1과목만 가능함)</p>
+            <!-- name을 같게 해줘야지 중복 선택을 막을 수 있다. (반드시) -->
+            <label><input type="radio" name="subject" value="speaking">회화</label>
+            <label><input type="radio" name="subject" value="grammer">문법</label>
+            <label><input type="radio" name="subject" value="listening">듣기</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>메일링</legend>
+            <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요 (복수 선택 가능)</p>
+            <label><input type="checkbox" name="mailing" value="economics">경제</label>
+            <label><input type="checkbox" name="mailing" value="sports">스포츠</label>
+            <label><input type="checkbox" name="mailing" value="entertainment">연예</label>
+        </fieldset>
+    </form>
+</body>
+</html>

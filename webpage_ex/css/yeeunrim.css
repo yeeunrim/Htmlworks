@@ -1,60 +1,94 @@
 /* yeeunrim.html의 스타일 */
 body{
     margin: 0;
-    background-color: black;
+    /* background-color: black; */
+}
+.header-notice{
+    border-bottom: 1px solid black;
+    line-height: 3px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+}
+.homepage-notice{
+    font-family: 'Athiti';
+    font-size: 10pt;
+    color: black;
+}
+.logo{
+    border: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 .font-effect-neon{
     font-family: "Sofia", sans-serif;
-    font-size: 20pt;
-    text-align: right;
-    font-style: bold;
-    margin-right: 25px;
-    text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 
-        0 0 0.4em black, 0 0 0.6em gray, 0 0 0.8em gray, 0 0 1.0em gray, 0 0 1.2em gray;
+    font-size: 1.7vw;
+    text-align: center;
+    text-shadow:  0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 
+    0 0 0.4em black, 0 0 0.6em gray, 0 0 0.8em gray, 0 0 1.0em gray, 0 0 1.2em gray;
 }
-ul li{
-    text-align: right;
-    margin-right: 25px;
+.menu{
+    position: fixed;
+    top: 30px;
+}
+.menu:hover{
+    background-color: darkgray;
+    opacity: 0.7;
+}
+ul{
+    padding: 0px 15px;
+    line-height: 25px;
 }
 ul li a{
-    color: white;
     font-family: 'Athiti';
-    text-decoration: none;
     font-size: 13pt;
+    color: black;
+    text-decoration: none;
     letter-spacing: 1px;
+    font-style: bold;
 }
 ul li a:hover{
     text-decoration-line: line-through;
+    font-style: italic;
+    color: white;
 }
-.img1{
-    display: block;
-    margin-top: -113px;
-    margin-left: 70px;
-    opacity: 0.9;
+.mainpicture-right{
+    border: 0px solid black;
+    width: 50%;
+    height: 900px;
     position: absolute;
+    right: 0;
     z-index: -1;
 }
-.img2{
-    display: block;
-    margin-bottom: 200px;
-    margin-left: 870px;
-    margin-top: 100px;
-    opacity: 0.9;
+.mainpicture-right:hover{
+    opacity: 0.7;
 }
-.div1{
-    margin: 20px;
+.mainpicture-left{
+    border: 0px solid black;
+    width: 50%;
+    height: 900px;
+    position: absolute;
+    top: 903px;
+    left: 0;
+    z-index: -1;
 }
-#copyright{
+.mainpicture-left:hover{
+    opacity: 0.7;
+}
+.footer-left{
     font-family: 'Athiti';
-    font-size: 13pt;
-    text-align: right;
-    color: white;
-    float: right;
+    font-size: 1.3vw;
+    color: black;
+    position: fixed;
+    left: 25px;
+    bottom: 0px;
 }
-#thank{
+.footer-right{
     font-family: 'Athiti';
-    font-size: 13pt;
-    text-align: left;
-    color: white;
-    float: left;
-} 
+    font-size: 1.3vw;
+    color: black;
+    position: fixed;
+    right: 25px;
+    bottom: 0px;
+}

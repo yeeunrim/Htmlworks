@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디스플레이 속성</title>
+    <style>
+        .round{
+            width: 300px;
+            height: 250px;
+            border: 2px solid #ff0000;
+            border-radius: 20px;
+            margin: 20px;
+
+            /* 수평 배치 */
+            /* 속성을 추가하지 않고 수평 배치할 때는 inline을 사용 */
+            /* 속성(너비, 높이, 여백 등)을 준 상태에서는 inline-block을 사용 */
+            display: inline-block;
+        }
+        #bg{
+            background: url(images/cat.jpg) no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="round"></div>
+    <div class="round" id="bg"></div>
+</body>
+</html>

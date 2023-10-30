@@ -1,0 +1,27 @@
+/* 상단 메뉴 만들기 */
+body{
+    margin: 0;
+}
+ul{
+    list-style: none;
+    /* ul 태그의 마진(16px)을 0px로 초기화 */
+    margin: 0;
+}
+ul li{
+    /* inline은 적용 안됨. margin이 속성이 추가되어서 안됨 */
+    display: inline-block;
+    margin: 16px;
+    border-top: 3px solid #222;
+    padding: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+}
+ul li:hover{
+    background-color: lightgray;
+}
+section h1{
+    margin-left: 20px;
+}
+
