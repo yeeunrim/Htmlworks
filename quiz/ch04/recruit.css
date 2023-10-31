@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color: #02233b;
+    font-family: Lucida Grande, 나눔고딕, NanumGothic !important; line-height: 1.4em;
+}
+
+#container{
+    border: 1px solid gray;
+    width: 92%; height: 800px;
+    margin: 0px auto;
+    background: url(../images/mic.png) no-repeat right bottom;
+    /* 배경 색의 경우 , 배경 이미지 삽입 이후로 해야함 */
+    background-color: white; 
+}
+
+h1{
+    background-color: #004344; width: auto; height: 50px;
+    color: white;
+    margin: 20px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+h2{
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+}
+
+h3{
+    color: orange;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#table, #table2{
+    padding-top: 10px;
+    margin: 0;
+}
+ul{
+    list-style: none;
+    text-align: left;
+}
+ul li{
+    padding-left: 30px;
+    line-height: 2;
+}

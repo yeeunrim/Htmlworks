@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록 선택 태그 예제</title>
+    <style>
+        #wrap{
+            width: 800px;
+            margin: 50px auto;
+        }
+        form{
+            width: 500px;
+            margin: 0 auto;
+        }
+        fieldset{
+            margin-bottom: 16px;
+        }
+        ul li{
+            list-style: none;
+            margin: 16px
+        }
+        .major{
+            height: 25px;
+        }
+        input[type='submit'], input[type='reset']{
+            padding : 5px 10px;
+            /* 마우스 포인터가 손 모양 */
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <!-- 수강 신청 폼 -->
+    <div id="wrap">
+        <form action="process.jsp" method="post"> 
+            <fieldset>
+                <legend>수강 신청</legend>
+                <!-- autofocus 속성 : 페에지 커서 위치 지정 -->
+                <!-- required 속성 : 필수 입력 제한 -->
+                <ul>
+                    <li>
+                        <label for="cid">학과번호</label>
+                        <input type="text" id="cid" name="cid" autofocus required>
+                    </li>
+                    <li>
+                        <label for="sname">이름</label>
+                        <input type="text" id="cid" name="sname" required> 
+                    </li>
+                    <li>
+                        <label for="major">학과선택</label>
+                        <select id="major" name="major">
+                            <option value="etc">--------</option>   
+                            <option value="software">소프트웨어학과</option>              
+                            <option value="mechanic">기계공학과</option>
+                            <option value="electric">전기전자공학과</option>
+                            <option value="computer">컴퓨터공학과</option>
+                        </select>
+                    </li>
+                </ul>
+            </fieldset>
+            <div>
+                <input type="submit" value="신청">
+                <input type="reset" value="취소">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

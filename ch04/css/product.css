@@ -1,0 +1,45 @@
+body{font-family: Lucida Grande, 나눔고딕, NanumGothic !important; line-height: 1.4em;}
+
+/* div 섹션 전체 선택 */
+div{
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    padding :0 20px 20px 20px;
+}
+
+/* 내용 전체 -  */
+#container{
+    border: none;
+    width: 960px;
+    margin: 0 auto; /* 가운데 정렬 */
+    padding: 10px 20px;
+    line-height: 2;
+}
+
+/* 레드향 part */
+#description{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+/* 레시피 part */
+
+
+/* 상품 part */
+#product{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* 상품구성 표 */
+table{border-collapse: collapse;}
+th, td{
+    border: 1px solid gray;
+    padding: 10px;
+}
+caption{
+    margin-bottom: 10px;
+}
+thead{
+    background-color: lightgray;
+}

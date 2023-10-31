@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파일 첨부</title>
+    <style>
+        form{
+            margin: 0;
+        }
+        fieldset{
+            margin: 0 0 20px 0;
+        }
+        input[type='submit'], input[type='reset']{
+            padding: 10px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>김치냉장고 주문하기</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>반품 정보</legend>
+            <p>만일 수령한 상품에 문제가 있다면 즉시 반품 신청해 주세요</p>
+            <p>반품 신청 시 상품의 상태를 사진으로 첨부해 주세요</p>
+            <hr>
+            <input type="file" name="upload">
+        </fieldset>
+        <div>
+            <input type="submit" value="반품 신청">
+            <input type="reset" value="반품 취소">
+        </div>
+    </form>
+</body>
+</html>

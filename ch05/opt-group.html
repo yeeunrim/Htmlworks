@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select 태그 예제</title>
+</head>
+<body>
+    <form action="cars.jsp" method="post">
+        <label for="cars">차를 선택하세요.</label>
+        <select id="cars" name="cars">
+            <!-- optgroup 태그 : 관련 옵션을 그룹화한 태그 -->
+            <optgroup label="현대자동차">
+                <option value="IONIQ5">IONIQ5</option>
+                <option value="GENESIS">GENESIS</option>
+                <option value="SONATA">SONATA</option>
+                <option value="SANTAFE">SANTAFE</option>
+            </optgroup>
+            <optgroup label="기아자동차">
+                <option value="MORNING">MORNING</option>
+                <option value="K8">K8</option>
+                <option value="EV6">EV6</option>
+                <option val="MOHAVE">MOHAVE</option>
+            </optgroup>
+        </select>
+        <p><input type="submit" value="전송"></p>
+    </form>
+</body>
+</html>
