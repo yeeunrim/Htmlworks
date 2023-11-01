@@ -23,11 +23,23 @@ ul li{
     margin: 16px;
 }
 
+ul li label{
+    width: 120px;
+    float: left;
+}
+
+label .size{
+    width: 140px;
+}
+
+textarea{resize: none;}
+
 fieldset{
     margin-left: 0; margin-right: 0;
     margin-bottom: 16px;
 }
 
-input[type="submit"]{
+input[type="submit"], input[type="reset"]{
     padding: 10px;
+    cursor: pointer;
 }

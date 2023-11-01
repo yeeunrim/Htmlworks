@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 속성</title>
+    <style>
+        div{
+            padding: 10px;
+            margin: 10px;
+        }
+       .box1{
+            background: pink;
+            /* 내 위치가 왼쪽으로 가겠다. 다음 객체는 그 옆으로 위치함 */
+            float: left;
+        }
+        .box2{
+            background: lightsalmon;
+            float: left;
+        }
+        .box3{
+            background: lightblue;
+            float: right;
+        }
+        .box4{
+            background: lightgreen;
+            /* float 속성을 해제 */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+</body>
+</html>

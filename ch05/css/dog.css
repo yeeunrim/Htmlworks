@@ -1,0 +1,19 @@
+/* float-navbar.html의 스타일 */
+
+/* 전체 스타일 */
+*{margin: 0; padding: 0;}
+body{font-family: Lucida Grande !important;}
+#container{width: 1000px; margin: 0 auto;}
+
+/* header 스타일 */
+header{width: 100%; height: 80px; background: #069;}
+header #logo{width: 30%; float: left; line-height: 80px; /* 수직 정렬 - 가운데 */}
+#logo h1{color: white; padding-left: 20px; font-style: italic;}
+header nav{width: 70%; float: right;}
+nav ul{list-style: none; margin-right: 100px;}
+nav ul li{float: right; margin: 0 20px; line-height: 80px; /* 수직 정렬 - 가운데 */}
+nav ul li a{color: white; text-decoration: none;}
+ul li a:hover{color: black; text-decoration-line: line-through; font-style: italic;}
+
+/* section 스타일 */
+section h1{margin: 20px;}

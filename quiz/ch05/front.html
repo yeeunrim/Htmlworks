@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>교재 P.164 예제 풀이</title>
+</head>
+<body>
+    <!-- 가운데 정렬 -->
+    <div id="container">
+
+        <div id="header">
+            <h1>프런트엔트 개발자 지원서</h1>
+            <p>HTML, CSS, 자바스크립트의 기술을 이해하고 실무 경험이 있는 분을 찾<br>습니다.</p>
+            <hr>
+        </div>
+        
+        <form action="" method="post">
+            <legend>개인 정보</legend>
+            <ul>
+                <li>
+                    <label for="name" class="info">이름</label>
+                    <input type="text" name="name" placeholder="공백 없이 입력하세요" autofocus required>
+                </li>
+                <li>
+                    <label for="phone" class="info">연락처</label>
+                    <input type="tell" name="phone">
+                </li>
+            </ul>
+
+            <legend>지원 분야</legend>
+            <ul>
+                <li>
+                    <label><input type="radio" name="field" value="publishing"> 웹 퍼블리싱</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="field" value="application"> 웹 애플리케이션 개발</label>
+                </li>
+                <li>
+                    <label><input type="radio" name="field" value="environment"> 개발 환경 개선</label>
+                </li>
+            </ul>
+
+            <legend>지원 동기</legend>
+            <ul class="ul3">
+                <li>
+                    <textarea cols="60" rows="5" name="memo" placeholder="본사 지원 동기를 간략히 써 주세요."></textarea>
+                </li>
+            </ul>
+        </form>
+
+        <div class="buttons">
+            <!-- <input type="submit" value="접수하기">
+            <input type="reset" value="다시 쓰기"> -->
+            <button type="submit">접수하기</button>
+            <button type="reset">다시 쓰기</button>
+        </div>
+
+    </div>
+</body>
+</html>

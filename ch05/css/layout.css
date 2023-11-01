@@ -1,0 +1,48 @@
+/* float-layout.html의 스타일 */
+body{
+    font-family: Lucida Grande, 나눔고딕, NanumGothic !important;
+}
+
+*{
+    margin: 0; padding: 0;
+}
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1{
+    color: blue;
+    padding: 10px 20px;
+}
+
+header{
+    /* 부모(container)의 크기 1000px이기 때문에 border 2px 제외 */
+    width: 998px;
+    height: 100px;
+    border: 1px solid gray;
+}
+
+section{
+    width: 698px;
+    height: 600px;
+    border: 1px solid gray;
+    float: left;
+    background: lightgray;
+}
+
+aside{
+    width: 298px;
+    height: 600px;
+    border: 1px solid gray;
+    float: right;
+    background: lightcyan;
+}
+
+footer{
+    width: 998px;
+    height: 100px;
+    border: 1px solid gray;
+    clear: both;
+}
