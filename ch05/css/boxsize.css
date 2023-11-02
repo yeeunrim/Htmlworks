@@ -1,0 +1,20 @@
+/* box-sizing2.html 스타일 */
+
+/* all */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+#container{width: 1000px; margin: 0 auto;}
+
+/* container의 width를 기준으로 설정됨 */
+/* 따라서 width가 같으면 생략 가능 */
+
+/* header */
+header{width: 100%; height: 100px; border: 1px solid gray; padding: 10px;}
+
+/* section */
+section{width: 660px; height: 600px; border: 1px solid gray; padding: 10px; float: left;}
+
+/* asdie */
+aside{width: 340px; height: 600px; border: 1px solid gray; padding: 10px; float: right;}
+
+/* footer */
+footer{width: 1000px; height: 100px; border: 1px solid gray; padding: 10px; clear: both;}

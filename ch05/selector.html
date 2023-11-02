@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연결 선택자</title>
+  <style>
+    section{width: 600px;}
+    
+    /* 1. 하위선택자 */
+    /* section과 p 사이에 '공백 문자'가 있고 하위선택자로 함 */
+    /* section p{color: blue;} */
+
+    /* 2. 자식선택자 */
+    /* section과 p 사이에 '>'가 있고 자식선택자라고 함 */
+    /* section >  p{color: blue;} */
+
+    /* 3. 기타선택자 */
+    /* '+'기호는 형제 요소 중 가장 가까운 요소에 적용됨 */
+    section h1 + p{color: blue;}
+  </style>
+</head>
+<body>
+  <section>
+    <h1>예약 방법 & 사용 요금</h1>
+    <p>아직 온라인 예약 신청이 준비되어 있지 않습니다. <br>
+       전화(02-1234-0000)로 문의 바랍니다.
+    </p>
+    <p>펜션 객실 안내</p>
+    <div>
+      <p>크리스탈: 60,000원/일</p>
+      <p>루비: 75,000원/일</p>
+    </div>
+  </section>
+</body>
+</html>

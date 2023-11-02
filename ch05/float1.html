@@ -4,28 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>float 속성</title>
+    <!-- float: left; = 내 위치가 왼쪽으로 가겠다. 다음 객체는 그 옆으로 위치함 -->
     <style>
-        div{
-            padding: 10px;
-            margin: 10px;
-        }
-       .box1{
-            background: pink;
-            /* 내 위치가 왼쪽으로 가겠다. 다음 객체는 그 옆으로 위치함 */
-            float: left;
-        }
-        .box2{
-            background: lightsalmon;
-            float: left;
-        }
-        .box3{
-            background: lightblue;
-            float: left;
-        }
-        .box4{
-            background: lightgreen;
-            float: right;
-        }
+        div{padding: 10px; margin: 10px; float: left;}
+        .box1{ background: pink;}
+        .box2{background: lightsalmon;}
+        .box3{background: lightblue;}
+        .box4{background: lightgreen; float: right;}
     </style>
 </head>
 <body>
