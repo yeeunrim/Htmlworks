@@ -1,0 +1,11 @@
+/* after2.html 스타일 */
+
+*{padding: 0;}
+#wrap{width: 700px; margin: 0 auto;}
+
+nav{border-bottom: 1px solid black;}
+nav ol{list-style: none;}
+nav ol li{display: inline-block;}
+nav ol li a{text-decoration: none;}
+nav ol li a::after{content: "＞"; color: #000; padding: 0 5px; 
+  font-size: 0.9em; font-weight: bold;}

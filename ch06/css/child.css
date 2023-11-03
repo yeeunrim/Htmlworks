@@ -1,0 +1,26 @@
+/* child.html의 스타일 */
+body{font-family: Lucida Grande;}
+
+#container{width: 960px; margin: 0 auto;}
+.contents{width: 400px; border: 1px solid gray; 
+  margin: 0 auto; padding: 10px; text-align: justify;}
+
+/* 구조 가상 선택자 */
+/* contents의 모든 자식 요소 중에서 첫번째 자식 요소 */
+/* '.contents :nth-child(1)'과 같음 */
+.contents :first-child{color: palevioletred;} 
+
+/* contents의 모든 자식 요소 중에서 n번째 자식 요소 */
+.contents :nth-child(2){background-color: peachpuff;}
+
+/* contents의 모든 자식 요소 중에서 마지막 자식 요소 */
+.contents :last-child{background-color: lightblue;}
+
+/* contents의 모든 자식 요소 중에서 2n번째 자식 요소 */
+.contents :nth-child(2n){color: olive;} /* 2, 4, 6번째 ... */
+
+/* contents의 자식인 p태그 중에서 두번째 요소 선택 */
+.contents p:nth-of-type(2){color: mediumseagreen;}
+
+/* '본문 내용2'의 색상을 녹색으로 변경 */
+.contents h2:nth-of-type(2){color: green;}

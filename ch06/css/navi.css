@@ -1,0 +1,14 @@
+/* a-selector의 스타일 */
+*{margin: 0; padding: 0;}
+body{font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+
+.wrap{width: 960px; margin: 0 auto;}
+
+nav{height: 80px; text-align: center;} 
+nav ul{list-style: none; border-bottom: 2px solid #ccc;}
+nav ul li{display: inline-block; line-height: 80px; margin: 0 20px;}
+nav ul li a:link, a:visited{text-decoration: none; color: #222; padding: 10px;}
+/* a:focus = 탭키로 동작 */
+nav ul li a:hover, a:focus{background: rgb(93, 93, 93); color: whitesmoke;}
+/* a:active = 마우스 클릭하여 동작 */
+nav ul li a:active{background-color: lightgray; color: #222;}

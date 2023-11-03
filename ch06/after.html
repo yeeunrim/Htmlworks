@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가상요소 - ::after 사용</title>
+  <style>
+    .goods{width: 600px; margin: 0 auto;}
+    ul{padding: 0;}
+    ul li{margin: 16px;}
+    /* ::after 선택자 - content 속성 */
+    /* font-size = 16px(default) = 1em */
+    ul .new::after{content: "NEW"; 
+    background-color: red; color: whitesmoke; font-size: 0.8em;
+    border-radius: 2px; margin: 0 6px; padding: 2px;}
+  </style>
+</head>
+<body>
+  <div class="goods">
+    <h2>Product List</h2>
+    <ul>
+      <li class="new">Ramen</li>
+      <li>Water</li>
+      <li>Tofu</li>
+      <li class="new">Coffee</li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nth-child 속성</title>
+  <style>
+    body{font-family: Lucida Grande;}
+    table{border-collapse: collapse;}
+    td{border: 1px solid gray; padding: 10px 20px; text-align: center;}
+
+    /* n=0을 대입해서 홀수번째에 배경색 들어감 - 행 */
+    table tr:nth-child(2n+1){background-color: darkgray;}
+    table tr:nth-of-type(2n){background-color: rgb(229, 228, 228);}
+  </style>
+</head>
+<body>
+  <h2>건강에 좋은 식품</h2>
+  <table>
+    <tr>
+      <td>블루베리</td>
+    </tr>
+    <tr>
+      <td>귀리</td>
+    </tr>
+    <tr>
+      <td>토마토</td>
+    </tr>
+    <tr>
+      <td>시금치</td>
+    </tr>
+    <tr>
+      <td>적포도주</td>
+    </tr>
+    <tr>
+      <td>견과류</td>
+    </tr>
+    <tr>
+      <td>브로콜리</td>
+    </tr>
+    <tr>
+      <td>연어</td>
+    </tr>
+    <tr>
+      <td>마늘</td>
+    </tr>
+    <tr>
+      <td>녹차</td>
+    </tr>
+  </table>
+</body>
+</html>

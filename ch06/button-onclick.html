@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>button 태그의 onclick 속성</title>
+  <!-- <script>
+    alert("안녕하세요 :) 만나서 반갑습니다 !")
+  </script> -->
+</head>
+<body>
+  <!-- alert = 알림창 or 경고창 -->
+  <p>
+    <button type="button" onclick="alert('아이디를 입력해주세요')">클릭</button>
+  </p>
+ 
+  <!-- confirm = 확인/취소 창 -->
+  <p>
+    <button onclick="confirm('정말로 삭제하시겠습니까?')">삭제</button>
+  </p>
+
+  <p>
+    <button onclick="window.open('https://www.naver.com')">네이버 가기</button>
+  </p>
+
+  <p>
+    <button onclick="window.open('https://www.naver.com', '네이바', 'width=200, height=300, top=150, left=200')">네이버 공지창</button>
+  </p>
+</body>
+</html>
