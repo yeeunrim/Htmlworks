@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연결 선택자 예제</title>
+  <style>
+    #wrap{width: 600px;} 
+
+    /* 하위요소(ul) 전체에 스타일 적용 */
+    /* #wrap ul{border: 1px solid gray;} */
+    
+    /* 자식요소(ul)에 스타일 적용 */
+    #wrap > ul{border: 1px solid gray;}
+  </style>
+</head>
+<body>
+  <!-- 본문 -->
+  <section id="wrap">
+    <header>
+      <h1>예약 방법 및 요금</h1>
+    </header>
+    <p>행복펜션에 예약하려면</p>
+    <ul>
+      <li>예약방법</li>
+      <ul>
+        <li>직접 통화</li>
+        <li>문자 남기기</li>
+      </ul>
+      <li>요금</li>
+      <ul>
+        <li>1인 : 40,000원</li>
+        <li>2인 : 60,000원</li>
+        <li>3인 : 80,000원</li>
+        <li>4인 : 100,000원</li>
+      </ul>
+    </ul>
+  </section>
+</body>
+</html>

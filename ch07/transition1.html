@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition 속성(시간)</title>
+  <style>
+    .tr1{width: 100px; height: 100px; background-color: blue; 
+      position: absolute; left: 100px; top: 50px;
+      /* transition 속성 - ','로 속성 값들을 구분해줘야 한다. */
+      /* transition-property: width; transition-duration: 1s; */ 
+      transition: width, height, 1s, 2s;}
+    .tr1:hover{width: 200px; height: 200px;}
+  </style>
+</head>
+<body>
+  <div class="tr1"></div>
+</body>
+</html>

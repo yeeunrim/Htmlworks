@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>트랜지션 속도 곡선 지정</title>
+  <style>
+    #ex div{width: 100px; height: 50px; background-color: paleturquoise; 
+      padding: 5px; text-align: center; margin: 10px; float: left;}
+    #ex .linear{transition: all 2s;}
+    #ex .linear:hover{height: 200px;}
+    /* 점점 빨라지다가 마지막에는 천천히 끝남 */
+    #ex .ease{transition: all 2s ease;}
+    #ex .ease:hover{height: 200px;}
+    /* 느리게 시작하고 빨리 끝남 */
+    #ex .ease-in{transition: all 2s ease-in;}
+    #ex .ease-in:hover{height: 200px;}
+    /* 빨리(급속) 시작하고 느리게 끝남 */
+    #ex .ease-out{transition: all 2s ease-out;}
+    #ex .ease-out:hover{height: 200px;}
+    /* 느리게 시작하고 느리게 끝남 */
+    #ex .ease-in-out{transition: all 2s ease-in-out;}
+    #ex .ease-in-out:hover{height: 200px;}
+  </style>
+</head>
+<body>
+  <div id="ex">
+    <div class="linear">linear</div>
+    <div class="ease">ease</div>
+    <div class="ease-in">ease-in</div>
+    <div class="ease-out">ease-out</div>
+    <div class="ease-in-out">ease-in-out</div>
+  </div>
+</body>
+</html>

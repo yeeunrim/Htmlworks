@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition과 transform 속성</title>
+  <style>
+    .tr{width: 200px; height: 200px; background: khaki; margin: 100px;
+      /* transition-property: width, height, transform; transition-duration: 2s, 2s, 2s; */
+      transition: width, height, transform, all 2s;}
+    .tr:hover{width: 250px; height: 250px; transform: rotate(180deg);}
+  </style>
+</head>
+<body>
+  <div class="tr"></div>
+</body>
+</html>

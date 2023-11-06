@@ -1,0 +1,21 @@
+/* float-navbar.html의 스타일 */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@600&display=swap');
+
+/* 전체 스타일 */
+*{margin: 0; padding: 0;}
+body{font-family: Lucida Grande !important;}
+#container{width: 1000px; margin: 0 auto;}
+
+/* header 스타일 */
+header{height: 80px; background: #000;}
+header #logo{width: 30%; float: left; line-height: 80px;}
+#logo h1{color: pink; padding-left: 20px; font-style: italic; font-family: 'Merienda', cursive;}
+
+header nav{width: 70%; float: right; line-height: 80px;}
+nav ul{list-style: none;}
+nav ul li{float: left;}
+nav ul li a{color: palevioletred; text-decoration: none; display: block; padding: 0 20px;}
+nav ul li a:hover{font-style: italic; background: #ccc;}
+
+/* section 스타일 */
+section h1{margin: 20px;}

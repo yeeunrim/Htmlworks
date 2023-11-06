@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prefix - 브라우저 접두사(Vendor Prefix)</title>
+  <style>
+    div{border: 5px solid #ccc; width: 300px; text-align: center;}
+    /* 표준 규약이 아닌 속성은 접두사 추가 */
+    div:hover{
+      /* -webkit- : chrome, safari */
+      /* -webkit-transform: translateX(100px); */
+      /* -ms- : Microsoft Edge */
+      /* -ms-transform: translateX(100px); */
+      /* -moz- : Linux 기반 */
+      /* -moz-transform: translateX(100px); */
+      transform: translateX(100px);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>MOUSE OVER</h1>
+  </div>
+</body>
+</html>
