@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미디어 쿼리 예제</title>
+  <style>
+    div{width: 90%; margin: 0 auto; border: 10px solid #ccc; padding: 20px;}
+    /* 가로의 크기가 800px 이상이면 숨기고 미만이면 보이기 */
+    /* @media screen and (min-width: 800px) {
+      div{display: none;}
+    } */
+    /* 가로의 크기가 800px 미만이면 숨기고 이상이면 보이기 */
+    @media screen and (max-width: 800px) {
+      div{display: none;}
+    }
+  </style>
+</head>
+<body>
+  <div>반응형 웹(Responsive Web)</div>
+</body>
+</html>

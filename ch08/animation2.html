@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation 속성</title>
+  <style>
+    .box1{height: 60px; padding: 20px; margin: 20px;
+      animation-name: moving; animation-duration: 3s; animation-iteration-count: infinite;}
+    @keyframes moving {
+      from{width: 150px; background-color: #faef7f; transform: scale(0.5) rotate(15deg); opacity: 0.5;}
+      to{width: 250px; background-color: #9ffe9f; transform: scale(1) rotate(0); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">CSS3 Animation</div>
+</body>
+</html>

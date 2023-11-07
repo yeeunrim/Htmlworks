@@ -1,0 +1,40 @@
+/* card.html */
+@charset "UTF-8";
+
+/* all */
+*{margin: 0; padding: 0;}
+
+/* 모바일 기준 */
+body{background-color: rgb(126, 126, 125);}
+#container{width: 320px; margin: 0 auto;}
+#container .card{width: 300px; height: 500px; 
+  background: whitesmoke; position: relative; margin: 20px 10px;}
+.card .word{position: absolute; top: 325px; left: 65px; text-align: center; padding-right: 65px;}
+.card .word h3{margin: 10px 0;}
+
+.card .word2{position: absolute; top: 325px; left: 30px; text-align: center; padding-right: 30px;}
+.card .word2 h3{margin: 10px 0;}
+
+.card .word3{position: absolute; top: 325px; left: 60px; text-align: center; padding-right: 60px;}
+.card .word3 h3{margin: 10px 0;}
+
+/* 태블릿 기준 */
+@media screen and (min-width: 780px) {
+  #container{width: 570px;}
+  #container .card{width: 550px; height: 250px; position: relative;}
+  .card .word{position: absolute; top: 80px; left: 330px; padding-right: 30px;}
+  .card .word2{position: absolute; top: 80px; left: 310px; padding-right: 10px;}
+  .card .word3{position: absolute; top: 80px; left: 340px; padding-right: 40px;}
+}
+
+/* PC 기준 - window */
+/* @media screen and (min-width: 1710px) { 570px * 3
+  #container{width: 1800px;}
+  #container .card{float: left;}
+} */
+
+/* PC 기준 - mac */
+@media screen and (min-width: 1000px) {
+  #container{width: 1800px;}
+  #container .card{float: left;}
+}

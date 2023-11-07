@@ -4,14 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&display=swap');
 
 /* all */
-body{font-family: Lucida Grande !important;}
-*{margin: 0; padding: 0;}
-
-/* wrap */
-#wrap{width: 1200px; margin: 0 auto;}
-
-
-/* common(공통) */
 *{margin: 0; padding: 0; font-family: 'Gothic A1', sans-serif;}
 a{text-decoration: none;} 
 ul{list-style: none;}
@@ -20,32 +12,52 @@ ul{list-style: none;}
 /* header */
 header{width: 100%; height: 100px; background: palevioletred;}
 header #logo{float: left; width: 250px; line-height: 100px;}
-header #logo h1{font-size: 50px;}
-header #logo h1 a{padding-left: 20px; color: bisque; font-family: 'Edu TAS Beginner', cursive;}
+header #logo a h1{padding-left: 20px; color: black; text-shadow: 3px 3px 3px pink;
+  font-family: 'Edu TAS Beginner', cursive; font-size: 50px;}
 header nav{float: right; width: 900px; padding-top: 40px;}
-
+header nav ul{margin-left: 282px;}
 /* menu(main) */
 #topmenu{height: 60px;}
 #topmenu > li{float: left; position: relative;} /* 자식요소만 선택 */
 #topmenu > li > a{display: block; color: black; padding: 20px 40px;}
 #topmenu > li > a:hover{text-decoration-line: line-through;}
-
 /* menu(sub) */
-#topmenu > li > ul{background: darksalmon; display: none; opacity: 0.9;
-  position: absolute; width: 160px; top: 60px}
+#topmenu > li > ul{background: black; display: none; 
+  position: absolute; width: 160px; top: 60px; left: -282px;}
 #topmenu > li:hover > ul{display: block; z-index: 10;}
-#topmenu > li > ul > li{padding: 8px 0 8px 35px;}
-#topmenu > li > ul > li > a{color: white; font-size: 14px;}
+#topmenu > li > ul > li{padding: 8px 40px; text-align: left;}
+#topmenu > li > ul > li > a{color: pink; font-size: 14px;}
 #topmenu > li > ul > li > a:hover{text-decoration-line: line-through;}
 
 /* main */
-main{height: 600px; padding: 5px; border: 5px solid black;}
-.notice{margin: 10px 300px; line-height: 600px; text-align: center;}
-section{width: 31%; /* main 크기의 31% */ height: 530px; border: 1px dotted gray; 
-    float: left; margin: 5px; padding: 5px;}
-section h3{padding: 16px 24px; background: url(../images/dot.png) no-repeat; background-position: 5px 20px; /* left(x), top(y) */ }
-section dl dt{font-weight: bold;}
-section dl dd{margin-bottom: 16px;}
+#index{height: 950px; padding: 5px; border: 5px solid black;}
+.hello{margin: 80px auto; text-align: center;}
+/* index.html */
+/* section */
+#contents{height: 400px; padding: 30px 80px;}
+/* tabMenu */
+#tabMenu{width: 600px; margin: 0 auto;}
+#tabMenu input[type="radio"]{display: none;}
+#tabMenu label{padding: 15px 25px; color: black; display: inline-block;}
+#tabMenu label:hover{font-style: italic; text-decoration-line: underline;}
+#tabMenu input:checked + label{color: rgb(230, 172, 191); border: 1px solid black; background: black;}
+/* notice, gallery */
+#tabMenu .tabContent{display: none; padding: 20px 0 0 0; border-top: 1px solid black;} 
+#tab1:checked ~ #notice, #tab2:checked ~ #gallery{display: block;} /* '~' : 형제 선택자 모두 선택 */
+#tabMenu .tabContent h2{display: none;}
+#notice ul{margin-left: 30px; list-style: square;}
+#notice ul li{line-height: 3; font-size: 15px;}
+#gallery ul li{display: inline;}
+#gallery ul li img{border: 2px dotted palevioletred; border-radius: 50px; 
+  box-shadow: 5px 5px 5px gray; margin: 10px 25px;}
+/* type.html */
+#type{height: 600px; padding: 5px; border: 5px solid black;}
+#type section{width: 31%; /* main 크기의 31% */ height: 530px; border: 1px dotted gray; 
+    float: left; margin: 10px 7.5px; padding: 5px;}
+#type h2{margin-left: 7.5px; margin-top: 5px;}
+#type h3{padding: 16px 24px; background: url(../images/dot.png) no-repeat; background-position: 5px 20px; /* left(x), top(y) */ }
+#type section dl dt{font-weight: bold;}
+#type section dl dd{margin-bottom: 16px;}
 
 /* aside */
 aside{clear: both; padding: 20px; background: pink}

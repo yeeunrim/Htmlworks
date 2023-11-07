@@ -1,0 +1,21 @@
+/* media-layout.html */
+@charset "UTF-8";
+
+/* 모바일 기준 */
+/* @media 생략 가능 */
+*{margin: 0; padding: 0;}
+#container{width: 100%; margin: 0 auto; background: #f00;}
+header{height: 100px; color: #fff; padding: 10px;}
+section{height: 600px; color: #fff;}
+footer{height: 100px; color: #fff;}
+
+/* 테블릿 기준 */
+@media screen and (min-width: 780px){
+  #container{background-color: #0f0;}
+}
+
+/* PC 기준 */
+/* 컴테이너(박스모델)의 고정 크기를 설정함 */
+@media screen and (min-width: 1024px) {
+  #container{width: 1024px; background-color: #00f;}
+}

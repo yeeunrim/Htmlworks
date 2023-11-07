@@ -8,37 +8,67 @@
 </head>
 <body>
     <div id="wrap">
-        <header>
-            <div id="logo">
-                <h1><a href="index.html">PETDOG</a></h1>
-            </div>
-            <nav>
-                <ul id="topmenu">
-                    <li>
-                      <a href="./html/type.html">애완견 종류</a>
-                      <ul>
-                        <li><a href="./html/type.html">소형견</a></li>
-                        <li><a href="./html/type.html">중형견</a></li>
-                        <li><a href="./html/type.html">대형견</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">건강 돌보기</a></li>
-                    <li>
-                      <a href="./html/type.html">입양하기</a>
-                      <ul>
-                        <li><a href="./html/type.html">입양하기</a></li>
-                        <li><a href="./html/type.html">분양하기</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#">더불어살기</a></li>
+      <header>
+        <div id="logo">
+          <a href="./index.html"><h1>PETDOG</h1></a>
+        </div>
+        <nav>
+            <ul id="topmenu">
+                <li>
+                  <a href="./html/type.html">Dog Type</a>
+                  <ul>
+                    <li><a href="./html/type.html">Small Dog</a></li>
+                    <li><a href="./html/type.html">Medium Dog</a></li>
+                    <li><a href="./html/type.html">Large Dog</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Health Care</a></li>
+                <li>
+                  <a href="./html/type.html">Adopt</a>
+                  <ul>
+                    <li><a href="./html/type.html">Adopt</a></li>
+                    <li><a href="./html/type.html">Parcel Out</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Living Together</a></li>
+            </ul>
+        </nav>
+      </header>
+        
+        <main id="index">
+          <h2 class="hello">WELCOME TO PETDOG WEBSITE :) 🐶</h2>
+
+          <section id="contents">
+            <div id="tabMenu">
+              <input type="radio" id="tab1" name="tabs" checked>
+              <label for="tab1">Notice</label>
+              <input type="radio" id="tab2" name="tabs">
+              <label for="tab2">Gallery</label>
+      
+              <div id="notice" class="tabContent">
+                <h2>Notice Content</h2>
+                <ul>
+                  <li>사무실을 이전했습니다.</li>
+                  <li>[강아지 분양] 방문 예약 혜택입니다.</li>
+                  <li>우리가 몰랐던 강아지 정보... 반려동물정보</li>
+                  <li>강아지 용품 추천 사이트입니다.</li>
+                  <li>애완견 장례에 관한 정보입니다.</li>
                 </ul>
-            </nav>
-          </header>
-        
-        <main>
-            <h2 class="notice">WELCOME TO PETDOG WEBSITE :)</h2>
+              </div>
+      
+              <div id="gallery" class="tabContent">
+                <h2>Gallery Content</h2>
+                <ul>
+                  <li><img src="images/dog.png" alt="강아지" width="40%"></li>
+                  <li><img src="images/dog3.png" alt="강아지" width="40%"></li>
+                  <li><img src="images/dog3.png" alt="강아지" width="40%"></li>
+                  <li><img src="images/dog.png" alt="강아지" width="40%"></li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </main>
-        
+
         <footer>
             <p>2023 © KH-WEBAPP</p>
         </footer>

@@ -15,25 +15,56 @@
       <nav>
           <ul id="topmenu">
               <li>
-                <a href="#">애완견 종류</a>
+                <a href="#">Dog Type</a>
                 <ul>
-                  <li><a href="#">소형견</a></li>
-                  <li><a href="#">중형견</a></li>
-                  <li><a href="#">대형견</a></li>
+                  <li><a href="#">Small Dog</a></li>
+                  <li><a href="#">Medium Dog</a></li>
+                  <li><a href="#">Large Dog</a></li>
                 </ul>
               </li>
-              <li><a href="#">건강 돌보기</a></li>
+              <li><a href="#">Health Care</a></li>
               <li>
-                <a href="#">입양하기</a>
+                <a href="#">Adopt</a>
                 <ul>
-                  <li><a href="#">입양하기</a></li>
-                  <li><a href="#">분양하기</a></li>
+                  <li><a href="#">Adopt</a></li>
+                  <li><a href="#">Parcel Out</a></li>
                 </ul>
               </li>
-              <li><a href="#">더불어살기</a></li>
+              <li><a href="#">Living Together</a></li>
           </ul>
       </nav>
     </header>
+
+    <!-- 탭 메뉴 -->
+    <section id="contents">
+      <div id="tabMenu">
+        <input type="radio" id="tab1" name="tabs" checked>
+        <label for="tab1">Notice</label>
+        <input type="radio" id="tab2" name="tabs">
+        <label for="tab2">Gallery</label>
+
+        <div id="notice" class="tabContent">
+          <h2>Notice Content</h2>
+          <ul>
+            <li>사무실을 이전했습니다.</li>
+            <li>[강아지 분양] 방문 예약 혜택입니다.</li>
+            <li>우리가 몰랐던 강아지 정보... 반려동물정보</li>
+            <li>강아지 용품 추천 사이트입니다.</li>
+            <li>애완견 장례에 관한 정보입니다.</li>
+          </ul>
+        </div>
+
+        <div id="gallery" class="tabContent">
+          <h2>Gallery Content</h2>
+          <ul>
+            <li><img src="images/dog.png" alt="강아지" width="40%"></li>
+            <li><img src="images/puddle.png" alt="강아지" width="40%"></li>
+            <li><img src="images/puddle.png" alt="강아지" width="40%"></li>
+            <li><img src="images/dog.png" alt="강아지" width="40%"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </div>
 </body>
 </html>

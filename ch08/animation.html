@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>animation 속성</title>
+  <style>
+    div{width: 100px; height: 100px; background: peachpuff; margin: 60px; 
+      /* 애니메이션 이름 선언 */ 
+      /* animation-name: change-bg;  */
+      /* animation-duration: 3s;  */
+      /* 반복 횟수 - 무한반복(infinite) */
+      /* animation-iteration-count: infinite;  */
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; 순으로 작성 */
+      animation: change-bg 3s infinite;}
+    @keyframes change-bg {
+      from{background: peachpuff; border-radius: 0;}
+      to{background: peru; border-radius: 50%;}
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>
